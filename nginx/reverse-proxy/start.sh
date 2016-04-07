@@ -1,6 +1,8 @@
 #!/bin/bash
 
 CONF_DIR=$(dirname $0)
+cd ${CONF_DIR}
+CONF_DIR=$(pwd)
 
 docker run \
        -d \
